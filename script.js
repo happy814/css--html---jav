@@ -1,4 +1,3 @@
-
 // var a =  document.querySelector("h1")
 // a.style.backgroundColor = "black"
 // a.addEventListener("click",function(){
@@ -7,30 +6,24 @@
 
 // })
 
-let istatus = document.querySelector("h5")
+let isStatus = document.querySelector("h5");
 
-let add = document.querySelector("#add")
+let add = document.querySelector("#add");
 
-
-let check = 0
-
+let check = 0;
 
 add.addEventListener("click", function () {
-    if (
-        check == 0
-    ) {
-        istatus.innerHTML = "Friends"
-        istatus.style.color = "green" 
-        add.innerHTML="Remove"  
-        check=1
-    } else{
+  if (check == 0) {
+    isStatus.innerHTML = "Friends";
+    isStatus.style.color = "green";
+    add.innerHTML = "Remove";
+    check = 1;
+  } else {
+    isStatus.innerHTML = "Stranger";
+    isStatus.style.color = "red";
+    add.innerHTML = "Add Friends";
+    check = 0;
+  }
+});
 
-        istatus.innerHTML = "Stranger"
-        istatus.style.color = "red"
-        add.innerHTML = "Add Friends"
-        check=0
-    }
-
-
-
-})
+// getter, setter
